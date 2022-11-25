@@ -21,6 +21,5 @@ cv2.imwrite('Task3_Adaptive Mean.jpg', thresh1)
 cv2.imwrite('Task3_Adaptive Gaussian.jpg', thresh2)
 cv2.imwrite('Task3_simple_binary_threshold.jpg', thresh3)
 
-# De-allocate any associated memory usage
-if cv2.waitKey(0) & 0xff == 27:
+if cv2.waitKey(0):
     cv2.destroyAllWindows()
